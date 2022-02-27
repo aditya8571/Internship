@@ -84,3 +84,90 @@ Output Screen :
 
 ![checkout command](/home/aditya/Pictures/checkout)
 
+## 6. Init command
+
+The git init command creates a new Git repository. It can be used to convert an existing, unversioned project to a Git repository or initialize a new, empty repository. Most other Git commands are not available outside of an initialized repository, so this is usually the first command you'll run in a new project.
+
+***Command***
+
+    git init
+
+## 7. Log command
+
+The git log command shows a list of all the commits made to a repository. You can see the hash of each Git commit, the message associated with each commit, and more metadata. This command is useful for displaying the history of a repository.
+
+***Command***
+
+    git log
+
+## 8. Merge command
+
+To merge branches locally, use git checkout to switch to the branch you want to merge into. This branch is typically the main branch. Next, use git merge and specify the name of the other branch to bring into this branch. This example merges the jeff/feature1 branch into the main branch.
+
+***command***
+
+    git merge branch1/branch2
+
+## 9. gitignore file
+
+Git ignore files is a file that can be any file or a folder that contains all the files that we want to ignore. The developers ignore files that are not necessary to execute the project. Git itself creates many system-generated ignored files. Usually, these files are hidden files. There are several ways to specify the ignore files. The ignored files can be tracked on a .gitignore file that is placed on the root folder of the repository. No explicit command is used to ignore the file.
+
+***command***
+
+    $ touch .gitignore
+
+    $ cat .gitignore
+
+## 10. gitk command
+
+Gitk is invoked similarly to git log. Executing the gitk command will launch the Gitk UI
+
+***command***
+
+    gitk [<options>] [<revision range>] [--] [<path>…] <revision range>
+
+## 11. Pull Command
+
+The `git pull` command is used to fetch and download content from a remote repository and immediately update the local repository to match that content.
+
+***command***
+
+    git pull <remote name> <branch name>
+
+## 12. Push Command
+
+The `git push` command is used to transfer or push the commit, which is made on a local branch in your computer to a remote repository like GitHub.
+
+***Command***
+
+    git push <remote name> <branch name>
+
+## 13. Remote command
+
+The git remote command lets you create, view, and delete connections to other repositories. Remote connections are more like bookmarks rather than direct links into other repositories.
+
+***commands***
+
+    git remote 
+
+    git remote -v
+
+    git remote add [name] [url]
+
+    git remote remove [name]
+
+## 14. Status command
+
+The git status command displays the state of the working directory and the staging area. It lets you see which changes have been staged, which haven't, and which files aren't being tracked by Git. Status output does not show you any information regarding the committed project history.
+
+***command***
+
+    git status
+
+## 15. Stash command
+
+Use git stash when you want to record the current state of the working directory and the index, but want to go back to a clean working directory. The command saves your local modifications away and reverts the working directory to match the HEAD commit.
+
+***command***
+
+    git stash
